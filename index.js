@@ -74,14 +74,14 @@ function call(){
     let showContent = ["Я слушаю вас господин, чего пожелаете?", "Да сэр, чего желаете?", "Слушаю вас..."];
     const randomIndex = Math.floor(Math.random() * showContent.length);
     const utterance = new SpeechSynthesisUtterance(showContent[randomIndex]);
-    utterance.pitch = 0.5;
+    utterance.pitch = 0.8;
     speechSynthesis.speak(utterance);
 };
 
 function correctOption() {
-    let showContent = "Ваше приказы выполняется";
+    let showContent = "Выполняю...";
     const utterance = new SpeechSynthesisUtterance(showContent);
-    utterance.pitch = 1;
+    utterance.pitch = 0.8;
     speechSynthesis.speak(utterance);
 };
 
